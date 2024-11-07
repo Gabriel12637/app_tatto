@@ -1,1 +1,8 @@
-tatto
+*.db
+*.py[cod]
+.venv/
+.vscode/
+.web
+__pycache__/
+assets/external/
+venv/
