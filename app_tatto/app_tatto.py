@@ -1,19 +1,15 @@
 import reflex as rx
-from . import styles
 
-# Import all the pages.
-from .pages import *
+def index()->rx.Component:
+    return rx.fragment(
+        rx.heading("tatto designs",size="9"),
+        rx.text("una pagina que veras difentes diseños de tatto "),
+        rx.text("y prodras generar el diseño que gustes y cuantos quieras con ayuda de una IA "),
+        rx.image(src="imagen.png", alt="Tattoo Design"),
+    
+    )
 
-app = rx.App(
-    style=styles.base_style,
-    stylesheets=styles.base_stylesheets,
-    html_lang="en",
-    html_custom_attrs={"className": "!scroll-smooth"},
-    theme=rx.theme(
-        appearance="inherit",
-        has_background=True,
-        scaling="100%",
-        radius="none",
-        accent_color="violet",
-    ),
-)
+
+app=rx.App()
+app.add_page(index)
+
