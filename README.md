@@ -40,7 +40,7 @@ van a generar varios diseños y asi podran escogery tambien tendra la funcion de
 # arquitectura
 - arquitectura mvc
 - arquitectura limpia
-
+ 
 ## metodologia
 - scrum
 - xp (eXtreming programing) 🐉👻👽
