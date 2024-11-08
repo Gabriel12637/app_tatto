@@ -33,7 +33,9 @@ van a generar varios diseños y asi podran escogery tambien tendra la funcion de
 - pydantic
 - fastapl
 - trello  https://trello.com/b/d0KWvHuk/sin-t%C3%ADtulo
-- figma
+
+- figma   https://trello.com/invite/b/671f99b901ed566000e52761/ATTIc9e855aaa095d2c8f72cfa2687a7c401E680D293/apptatto
+
 - dbdiagram https://dbdiagram.io/d/672cda96e9daa85acaade8e8
 # arquitectura
 - arquitectura mvc
