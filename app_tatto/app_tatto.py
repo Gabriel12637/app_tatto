@@ -1,30 +1,61 @@
 import reflex as rx
 
-# Asegúrate de que la función devuelva algo, como rx.no_update si no hay actualizaciones.
-def generate_design(event):
-    # Aquí va tu lógica de generación del diseño
-    print("Diseño generado")
-    return rx.no_update  # Esto asegura que no se modifiquen los componentes si no es necesario
-
-# Crear el botón
-rx.button("Generar Diseño", on_click=generate_design)
-
 def index() -> rx.Component:
-    return rx.fragment(
-        rx.heading("Tattoo Designs", size="9"),
-        rx.text("Una página donde podrás ver diferentes diseños de tatuajes"),
-        rx.text("Y podrás generar el diseño que gustes y cuantos quieras con la ayuda de una IA"),
-        rx.image(src="imagen 3.png", alt="Tattoo Design"),
-        rx.image(src="imagen 4.png", alt="Tattoo Design"),
-        rx.image(src="imagen 5.png", alt="Tattoo Design"),
-        rx.button("Generar Diseño", on_click=generate_design),
-        rx.text("Descubre tu diseño de tatuaje personalizado"),
-        rx.form(
-            rx.text_input("Nombre", placeholder="Ingresa tu nombre"),
-            rx.text_area("Descripción", placeholder="Cuenta sobre tu idea de tatuaje"),
-            rx.button("Generar Diseño", on_click=generate_design)
-        )
-    )
+    return rx.container(
+        #boton para cambiar el tema
+        rx.color_mode.button(position="top-right"),
+        
+        rx.heading("**♥ـﮩ٨ـﮩﮩtatto designsـﮩـ٨ﮩ♥**", size="9",color="white",fontFamily="runas"),
+        rx.hstack(
+            rx.text(
+                "tatto designs es una aplicación móvil diseñada para los amantes de los tatuajes que no tienen algo en mente que les gustaria tatuarse y poder ayudales con los diseños que gusten",
+                size="5", color="white"
+            ),
+            rx.text(
+                "tatto designs es una aplicación móvil diseñada para raemos una recopilación de las mejores aplicaciones de tatuajes para Android e iOS de este 2024. Todas las herramientas imprescindibles para usuarios, diseñadores y tatuadores.",
+                size="5",
+            ),
+            rx.vstack(
+                rx.hstack(
+                    rx.link(
+                        rx.button("Registrate aqui!",color_scheme="green"),
+                        href="https://forms.gle/Gj2CstmbZuhy1V2c9",
+                        is_external=True,
+                    ),
+                    rx.link(
+                        rx.button("estilos",color_scheme="purple"),
+                        href="https://forms.gle/Gj2CstmbZuhy1V2c9",
+                        is_external=True,
+                    ),
+                    rx.link(
+                        rx.button(rx.icon(tag="instagram"),color_scheme="pink"),
+                        href="https://instagram.com",
+                        is_external=True,
+                    ),
+                    rx.link(
+                        rx.button(rx.icon(tag="facebook"),color_scheme="blue"),
+                        href="",
+                        is_external=True,
+                    ),
+                ),
+                rx.image(src="imagen 3.jng", alt="Tattoo Design"),
+                rx.image(src="imagen 4.jng", alt="tattoo Design"),
+                rx.image(src="imagen 6.jng", alt="tattoo Design"),
+                rx.text("Te quieres hacer un tatuaje pero no sabes si te va a quedar bien?", size="9",color="white",align="center"),
+                rx.text("Has llegado al lugar indicado. Hoy, en TuAppPara, traemos una recopilación de las mejores aplicaciones de tatuajes para Android e iOS de este 2024.")
+            
+                  
+            
+            ),
+            spacing="5",
+            justify="center",
+            min_height="85vh",
+        ),
+        bg=rx.image(src="imagen 9.jng", alt="Tattoo Design"),
+    ),
+ 
+
 
 app = rx.App()
 app.add_page(index)
+
