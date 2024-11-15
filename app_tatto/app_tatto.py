@@ -21,7 +21,7 @@ def index() -> rx.Component:
                 rx.hstack(
                     rx.link(
                         rx.button("Registrate aqui!",color_scheme="green"),
-                        href="https://forms.gle/Gj2CstmbZuhy1V2c9",
+                        href="https://forms.gle/SvfayeBmBDAbpiN2A",
                         is_external=True,
                     ),
                     rx.link(
