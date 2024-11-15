@@ -41,13 +41,8 @@ def index() -> rx.Component:
                     ),
                 ),
                 rx.image(src="https://i.pinimg.com/736x/de/95/60/de9560746c644363df6cc879f574e9a7.jpg"),
-                rx.image(src="/imagen4.jng", alt="tattoo Design"),
-                rx.image(src="/imagen6.jng", alt="tattoo Design"),
                 
-               
-            
-                  
-            
+                
             ),
             spacing="5",
             justify="center",
@@ -68,13 +63,26 @@ def index() -> rx.Component:
                 "lo primero que debes considerar es el diseño y su colocación. Cada cuerpo es diferente, y un tatuaje que se ve genial en otra persona puede no verse igual en tu piel. Sin embargo, si eliges un diseño que realmente te gusta y trabajas con un buen tatuador, lo más probable es que el resultado te sorprenda gratamente.",
                 size="5", color="white",margin_top="50px",fontFamily="monoespaciada"
             ),
-             rx.image(
-               src="/imagen7.jng", alt="Tattoo Design",
-                size="5", color="white",margin_top="50px"
-            ),
+             
+
+
+             
+        
        ),
         
-        bakground_image=rx.image(src="imagen 9.jng", alt="Tattoo Design"),
+
+     rx.image(
+    src="https://i.pinimg.com/736x/e8/13/82/e81382f59f22520e1ff84ebd8a25099c.jpg",
+    alt="Tattoo Design",
+    size="",
+    color="white",
+    margin_top="20px",
+    width="100",
+    height="100"
+),
+        
+        
+        bakground_image=rx.image(src="https://i.pinimg.com/736x/9f/16/f0/9f16f03a8bbf1a66ea2d89221b1d06d6.jpg", alt="Tattoo Design"),
         
     ),
  
