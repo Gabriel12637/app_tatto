@@ -64,9 +64,8 @@ def index() -> rx.Component:
                 size="5", color="white",margin_top="50px",fontFamily="monoespaciada"
             ),
              
-
-
-             
+         rx.text("El estilo de tatuaje **anime** se inspira en el arte visual y los personajes que aparecen en las series de animación japonesa, conocido como *anime*. Este tipo de tatuaje ha ganado una gran popularidad en todo el mundo, especialmente entre los aficionados a la cultura pop japonesa",align="center",margin_top="50px",)
+      
         
        ),
         
@@ -77,11 +76,18 @@ def index() -> rx.Component:
     size="",
     color="white",
     margin_top="20px",
-    width="100",
-    height="100"
+    width="30%",
+     
+
 ),
-        
-        
+
+
+
+
+
+
+
+
         bakground_image=rx.image(src="https://i.pinimg.com/736x/9f/16/f0/9f16f03a8bbf1a66ea2d89221b1d06d6.jpg", alt="Tattoo Design"),
         
     ),
