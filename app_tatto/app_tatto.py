@@ -70,21 +70,25 @@ def index() -> rx.Component:
        ),
         
 
-     rx.image(
+   
+
+rx.hstack(
+      rx.image(
     src="https://i.pinimg.com/736x/e8/13/82/e81382f59f22520e1ff84ebd8a25099c.jpg",
+    alt="Tattoo Design",
+    color="white",
+    margin_top="20px",
+    width="80%",
+     
+
+    ),
+    rx.image(src="https://i.pinimg.com/736x/fe/ab/eb/feabeb8e703ddd617a0cb70f13a15be5.jpg",margin_left="20em"),
     alt="Tattoo Design",
     size="",
     color="white",
     margin_top="20px",
     width="30%",
-     
-
-),
-
-
-
-
-
+),  
 
 
 
