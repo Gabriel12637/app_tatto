@@ -3,7 +3,7 @@ import reflex as rx
 def index() -> rx.Component:
     return rx.container(
         #boton para cambiar el tema
-        rx.color_mode.button(position="top-right"),
+       
         
         rx.heading("**♥ـﮩ٨ـﮩﮩtatto designsـﮩـ٨ﮩ♥**", size="9",color="white",fontFamily="runas"),
         
@@ -101,3 +101,4 @@ rx.hstack(
 app = rx.App()
 app.add_page(index)
 
+ 
